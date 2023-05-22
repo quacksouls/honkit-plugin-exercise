@@ -1,6 +1,6 @@
 {
   "name": "honkit-plugin-exercise",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Formatting exercises/problems in HonKit",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,9 @@
   ],
   "author": "Duck McSouls",
   "license": "Apache-2.0",
+  "engines": {
+    "gitbook": ">=3.0.0"
+  },
   "bugs": {
     "url": "https://github.com/quacksouls/honkit-plugin-exercise/issues"
   },
