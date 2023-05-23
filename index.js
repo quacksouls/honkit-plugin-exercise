@@ -1,14 +1,4 @@
 module.exports = {
-    // Extend website resources and HTML.
-    website: {
-        assets: "./assets",
-        js: [
-            "plugin.js"
-        ],
-        css: [
-            "plugin.css"
-        ]
-    },
     hooks: {
         /**
          * Number each exercise.  This is run before HonKit outputs HTML and
