@@ -1,6 +1,6 @@
 {
   "name": "honkit-plugin-exercise",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Formatting exercises/problems in HonKit",
   "main": "index.js",
   "scripts": {
