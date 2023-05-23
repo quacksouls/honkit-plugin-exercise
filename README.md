@@ -24,30 +24,26 @@ Add the plugin to your `book.json`:
 An exercise is added by the block:
 
 ```
-{% exercise %}
+{% exercise %}{% endexercise %}
 Insert your exercise text here.
-{% endexercise %}
 ```
 
 To help cross-reference an exercise, you can add a label. The label text should
 not have any white spaces.
 
 ```
-{% exercise label="my_label" %}
+{% exercise label="my_label" %}{% endexercise %}
 Insert your exercise text here.
-{% endexercise %}
 ```
 
 For example, the following exercise blocks
 
 ```
-{% exercise %}
+{% exercise %}{% endexercise %}
 What Is the airspeed velocity of an unladen swallow?
-{% endexercise %}
 
-{% exercise label="a_label" %}
+{% exercise label="a_label" %}{% endexercise %}
 What do you mean? An African or a European swallow?
-{% endexercise %}
 ```
 
 would be rendered as
