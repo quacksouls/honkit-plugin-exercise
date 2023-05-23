@@ -15,13 +15,13 @@ module.exports = {
          * indexes the page.
          */
         "page": (page) => {
-            const regex = /<strong>Exercise.<\/strong>/g;
+            const regex = /Exercise.<\/strong>/g;
             let match = page.content.match(regex);
             let i = 0;
 
             while (!!match) {
                 i++;
-                const replace = `<strong>Exercise ${i}.</strong>`;
+                const replace = `Exercise ${i}.</strong>`;
                 page.content = page.content.replace(match[0], replace);
                 match = page.content.match(regex);
             }
@@ -36,8 +36,8 @@ module.exports = {
         exercise: {
             process: (block) => {
                 const { label } = block.kwargs;
-                const prefix = !!label ? `<p id="${label}">` : "<p>";
-                const suffix = `<strong>Exercise.</strong>${block.body}</p>`;
+                const prefix = !!label ? `<strong id="${label}">` : "<strong>";
+                const suffix = `Exercise.</strong>${block.body}`;
                 return `${prefix}${suffix}`;
             }
         }
